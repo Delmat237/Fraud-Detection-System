@@ -1,9 +1,27 @@
-🛡️ Système de Détection de Fraude
+# 🛡️ Système de Détection de Fraude
 
 
 Système de détection de fraude bancaire en temps réel basé sur l'IA
 
 Une solution de sécurité financière intelligente qui utilise des algorithmes d'apprentissage automatique pour détecter les transactions frauduleuses en temps réel, offrant aux banques et institutions financières une protection avancée contre les menaces.
+
+# 📋 Table des Matières
+
+Fonctionnalités
+Architecture
+Pile Technologique
+Modèles d'Apprentissage Automatique
+Démarrage
+Utilisation
+Tests
+Métriques de Performance
+Fonctionnalités de Sécurité
+Déploiement
+Contribution
+Licence
+Auteur
+Remerciements
+
 🚀 Fonctionnalités
 Fonctionnalités principales
 
@@ -26,7 +44,7 @@ Support Webhook - Notifications en temps réel pour les activités suspectes
 Traitement par lots - Gestion de grands ensembles de données pour l'analyse historique
 Support multi-format - JSON, CSV et connectivité aux bases de données
 
-🏗️ Architecture
+# 🏗️ Architecture
 ┌────────────────────┐    ┌────────────────────┐    ┌────────────────────┐
 │   Frontend         │    │   API Backend      │    │   Moteur ML        │
 │   (React)          │◄──►│   (Flask)          │◄──►│   (TensorFlow)     │
@@ -39,29 +57,29 @@ Support multi-format - JSON, CSV et connectivité aux bases de données
 │   Analytics        │    │   (PostgreSQL)     │    │   (MLflow)         │
 └────────────────────┘    └────────────────────┘    └────────────────────┘
 
-🛠️ Pile Technologique
-Backend
+# 🛠️ Pile Technologique
+* Backend
 
-Python 3.8+ - Logique principale de l'application
-TensorFlow 2.x - Framework d'apprentissage automatique
-Flask - Framework d'API web
-PostgreSQL - Base de données principale
-Redis - Gestion de cache et sessions
-Celery - Traitement asynchrone des tâches
+        Python 3.8+ - Logique principale de l'application
+        TensorFlow 2.x - Framework d'apprentissage automatique
+        Flask - Framework d'API web
+        PostgreSQL - Base de données principale
+        Redis - Gestion de cache et sessions
+        Celery - Traitement asynchrone des tâches
 
-Frontend
+* Frontend
 
-React 18.x - Interface utilisateur
-Material-UI - Bibliothèque de composants
-Chart.js - Visualisation de données
-Axios - Client HTTP
+        React 18.x - Interface utilisateur
+        Material-UI - Bibliothèque de composants
+        Chart.js - Visualisation de données
+        Axios - Client HTTP
 
-DevOps et Infrastructure
+* DevOps et Infrastructure
 
-Docker - Conteneurisation
-Kubernetes - Orchestration
-AWS/GCP - Déploiement cloud
-GitHub Actions - Pipeline CI/CD
+        Docker - Conteneurisation
+        Kubernetes - Orchestration
+        AWS/GCP - Déploiement cloud
+        GitHub Actions - Pipeline CI/CD
 
 📊 Modèles d'Apprentissage Automatique
 Détection d'anomalies
@@ -83,7 +101,7 @@ Motifs de catégories de marchands - Analyse comportementale
 Anomalies géolocalisées - Détection basée sur la localisation
 Caractéristiques temporelles - Reconnaissance de motifs temporels
 
-🚦 Démarrage
+"🚦 Démarrage
 Prérequis
 Python 3.8+
 Node.js 16+
@@ -100,18 +118,18 @@ cd fraud-detection-system
 
 Configuration Backend
 
-# Créer un environnement virtuel
+## Créer un environnement virtuel
 python -m venv venv
 source venv/bin/activate  # Sur Windows : venv\Scripts\activate
 
-# Installer les dépendances
+## Installer les dépendances
 pip install -r requirements.txt
 
-# Configuration de la base de données
+#" Configuration de la base de données
 python manage.py migrate
 python manage.py create_admin
 
-# Démarrer les services
+#" Démarrer les services
 redis-server
 celery -A app.celery worker --loglevel=info
 python app.py
@@ -128,7 +146,7 @@ Déploiement Docker
 
 docker-compose up --build
 
-📈 Utilisation
+# 📈 Utilisation
 Endpoints API
 Analyse des transactions
 POST /api/v1/analyze
@@ -162,23 +180,23 @@ URL : http://localhost:3000
 Admin par défaut : admin@frauddetection.com
 Mot de passe : admin123
 
-🧪 Tests
+# 🧪 Tests
 Tests unitaires
-# Tests Backend
+## Tests Backend
 python -m pytest tests/
 
-# Tests Frontend
+## Tests Frontend
 cd frontend
 npm test
 
-Tests d'intégration
-# Tests API
+# Tests d'intégration
+## Tests API
 python -m pytest tests/integration/
 
-# Tests de charge
+## Tests de charge
 locust -f tests/load_test.py
 
-📊 Métriques de Performance
+# 📊 Métriques de Performance
 Performance des modèles
 
 Précision : 96,5 %
@@ -187,14 +205,14 @@ Rappel (Recall) : 91,8 %
 Score F1 : 93,0 %
 Taux de faux positifs : < 2 %
 
-Performance du système
+# Performance du système
 
 Latence : < 100 ms par transaction
 Débit : 10 000+ transactions/seconde
 Disponibilité : SLA de 99,9 %
 Scalabilité : Support de mise à l'échelle horizontale
 
-🔒 Fonctionnalités de Sécurité
+# 🔒 Fonctionnalités de Sécurité
 
 Chiffrement des données - AES-256 au repos
 Authentification API - Sécurité basée sur JWT
@@ -202,7 +220,7 @@ Limitation de taux - Protection contre les attaques DDoS
 Journalisation d'audit - Journaux complets des transactions
 Conformité RGPD - Protection de la confidentialité des données
 
-🌍 Déploiement
+# 🌍 Déploiement
 Environnement de production
 # Variables d'environnement
 export DATABASE_URL="postgresql://user:pass@localhost/frauddb"
@@ -220,7 +238,7 @@ Grafana - Tableaux de bord de performance
 ELK Stack - Journalisation centralisée
 Sentry - Suivi des erreurs
 
-🤝 Contribution
+# 🤝 Contribution
 
 Forker le dépôt
 Créer une branche de fonctionnalité (git checkout -b feature/fonctionnalite-incroyable)
@@ -228,7 +246,7 @@ Valider les modifications (git commit -m 'Ajout d'une fonctionnalité incroyable
 Pousser sur la branche (git push origin feature/fonctionnalite-incroyable)
 Ouvrir une Pull Request
 
-📜 Licence
+# 📜 Licence
 Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
 👨‍💻 Auteur
 Leonel Azangue (Delmat237)  
@@ -237,7 +255,7 @@ GitHub : @Delmat237
 LinkedIn : leonel-azangue  
 Email : azangueleonel9@gmail.com
 
-🙏 Remerciements
+# 🙏 Remerciements
 
 Équipe TensorFlow pour le framework ML
 Communauté React pour les outils frontend
