@@ -62,7 +62,7 @@ Support multi-format - JSON, CSV et connectivité aux bases de données
 
         Python 3.8+ - Logique principale de l'application
         TensorFlow 2.x - Framework d'apprentissage automatique
-        Flask - Framework d'API web
+        FastAPI - Framework d'API web
         PostgreSQL - Base de données principale
         Redis - Gestion de cache et sessions
         Celery - Traitement asynchrone des tâches
