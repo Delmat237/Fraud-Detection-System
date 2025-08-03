@@ -34,7 +34,7 @@ Une solution de sécurité financière intelligente qui utilise des algorithmes 
 ```
 ┌────────────────────┐    ┌────────────────────┐    ┌────────────────────┐
 │   Frontend         │    │   API Backend      │    │   Moteur ML        │
-│   (React)          │◄──►│   (Flask)          │◄──►│   (TensorFlow)     │
+│   (Next.js)          │◄──►│   (FastAPI)          │◄──►│   (TensorFlow)     │
 └────────────────────┘    └────────────────────┘    └────────────────────┘
         │                        │                        │
         │                        │                        │
@@ -50,13 +50,13 @@ Une solution de sécurité financière intelligente qui utilise des algorithmes 
 ### **Backend**
 - **Python 3.8+** - Logique principale de l'application
 - **TensorFlow 2.x** - Framework d'apprentissage automatique
-- **Flask** - Framework d'API web
+- **FastAPI** - Framework d'API web
 - **PostgreSQL** - Base de données principale
 - **Redis** - Gestion de cache et sessions
 - **Celery** - Traitement asynchrone des tâches
 
 ### **Frontend**
-- **React 18.x** - Interface utilisateur
+- **Next.js** - Interface utilisateur
 - **Material-UI** - Bibliothèque de composants
 - **Chart.js** - Visualisation de données
 - **Axios** - Client HTTP
